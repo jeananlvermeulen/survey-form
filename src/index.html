@@ -1,0 +1,197 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Street Racing Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to help the street racing tradition.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Please enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Please enter your Email address "
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="street racer">Street racer</option>
+        <option value="spectator">Spectator</option>
+        <option value="mechanic">Mechanic</option>
+        <option value="organiser">Organiser</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you agree that street racing is a tradition that will not die out soon?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />No</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite aspect of a street racing event?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Please select an option</option>
+        <option value="thrill">The thrill behind the wheel</option>
+        <option value="the cars">The cars</option>
+        <option value="the adrenalin rush">The adrenalin rush</option>
+        <option value="The racing community">The racing community</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What would you recommend the government should do?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="different-roads"
+          type="checkbox"
+          class="input-checkbox"
+        />Give street racers different roads to race legally.</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="assign-old-roads"
+          type="checkbox"
+          class="input-checkbox"
+        />Assign old roads to be used for racing away from traffic.</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="one-controlled-road"
+          type="checkbox"
+          class="input-checkbox"
+        />Assign traffic officers to help street racing stay in one controlled road.</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="hobbies"
+          type="checkbox"
+          class="input-checkbox"
+        />Accept that this is people’s hobbies.</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="legal-on-assigned-roads"
+          type="checkbox"
+          class="input-checkbox"
+        />Allow street racing to be legal on the assigned roads.</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="prevent-street-racing-in-tital"
+          type="checkbox"
+          class="input-checkbox"
+        />Try and prevent street racing in total.</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="illegal-street-racing-hotspots"
+          type="checkbox"
+          class="input-checkbox"
+        />Send officers to illegal street racing hotspots to try and prevent them.</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Work-with-illegal-street-racing-organizers"
+          type="checkbox"
+          class="input-checkbox"
+        />Work with illegal street racing organizers to make it legal.</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Help-organize-events-to-make-it-more-controlled"
+          type="checkbox"
+          class="input-checkbox"
+        />Help organize events to make it more controlled.</label
+      >
+     
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Please enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
